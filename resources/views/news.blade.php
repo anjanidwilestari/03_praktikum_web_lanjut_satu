@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2>Berita</h2>
+    <h2>Berita {{ $id }}</h2>
     
 </div>
 @endsection
