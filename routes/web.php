@@ -31,3 +31,5 @@ Route::get('/news/{id}', [PageController::class, 'news']);
 Route::prefix('program') -> group(function(){
     Route::get('/', [PageController::class, 'program']);
 });
+
+Route::get('/about', [PageController::class, 'about']);

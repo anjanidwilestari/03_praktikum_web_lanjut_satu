@@ -28,4 +28,9 @@ class PageController extends Controller
         return view('program', ['program' => $program]);
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
 }
