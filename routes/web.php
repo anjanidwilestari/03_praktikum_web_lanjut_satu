@@ -21,4 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [PageController::class, 'home']);
-Route::get('/product', [PageController::class, 'product']);
+
+Route::prefix('product') -> group(function(){
+    Route::get('/', [PageController::class, 'product']);
+});
+
+Route::get('/news/{id}', [PageController::class, 'news']);
+
