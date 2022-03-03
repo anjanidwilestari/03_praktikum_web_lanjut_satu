@@ -33,3 +33,7 @@ Route::prefix('program') -> group(function(){
 });
 
 Route::get('/about', [PageController::class, 'about']);
+
+//Route::resource('contact', PageController::class);
+
+Route::get('/contact', [PageController::class, 'contact']);
