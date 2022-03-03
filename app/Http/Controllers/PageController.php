@@ -10,13 +10,22 @@ class PageController extends Controller
     {
         return view('home');
     }
+
     public function product()
     {
-        $product=['Marble_Piano', 'Marble_Tangram', 'Marbel_Dinosaurus'];
+        $product=['Marble Piano', 'Marble Tangram', 'Marbel Dinosaurus'];
         return view('product', ['product' => $product]);
     }
+
     public function news($id)
     {
         return view ('news', ['id' => $id]);
     }
+
+    public function program()
+    {
+        $program=['Karir', 'Magang', 'Kunjungan Industri'];
+        return view('program', ['program' => $program]);
+    }
+
 }
