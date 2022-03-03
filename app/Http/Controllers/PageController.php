@@ -15,4 +15,8 @@ class PageController extends Controller
         $product=['Marble_Piano', 'Marble_Tangram', 'Marbel_Dinosaurus'];
         return view('product', ['product' => $product]);
     }
+    public function news()
+    {
+        return view ('news', ['id' => $id]);
+    }
 }
